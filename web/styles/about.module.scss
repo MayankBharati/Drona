@@ -1,0 +1,122 @@
+.about {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-family: poppins;
+    font-size: 60px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.aboutcards {
+    display: flex;
+    height: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.aboutcard {
+    width: 380px;
+    height: 210px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutcard:nth-child(1) {
+    background: linear-gradient(329.79deg, #0052d4 -31.21%, #4364f7 18.94%, #6fb1fc 98.47%);
+    box-shadow: 0px 12px 20px rgba(94, 146, 251, 0.3), 4px 8px 16px rgba(0, 27, 111, 0.2);
+}
+
+.aboutcard:nth-child(2) {
+    background: linear-gradient(175.95deg, #ffac71 25.27%, #ff8450 88.32%);
+    box-shadow: 0px 8px 16px rgba(255, 160, 106, 0.3), 0px 12px 20px rgba(255, 113, 113, 0.3);
+}
+
+.aboutcard:nth-child(3) {
+    background: linear-gradient(0deg, #02aab0 -1.21%, #00cdac 100%);
+    box-shadow: 0px 8px 16px rgba(0, 204, 172, 0.2), 0px 12px 20px rgba(0, 203, 172, 0.2);
+}
+
+.cardtext {
+    width: 70%;
+}
+
+.cardheading {
+    font-size: 25px;
+    font-weight: bolder;
+    padding-bottom: 1rem;
+}
+
+.logo {
+    width: 30%;
+}
+
+@media (max-width: 1250px) {
+    .cardheading {
+        font-size: 22px;
+        font-weight: bolder;
+        padding-bottom: 1rem;
+    }
+
+    .cardtext {
+        width: 60%;
+    }
+
+    .aboutcard {
+        width: 360px;
+        height: 210px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .cardheading {
+        padding-bottom: 0.5rem;
+    }
+
+    .aboutcard {
+        width: 340px;
+        height: 210px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .about {
+        height: fit-content;
+        padding: 2rem 0rem 2rem 0rem;
+    }
+
+    .aboutcards {
+        height: fit-content;
+        flex-direction: column;
+        padding: 2rem 1rem 2rem 1rem;
+    }
+
+    .aboutcard {
+        margin: 2rem 2rem 2rem 2rem;
+    }
+
+    .heading {
+        font-size: 50px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .cardheading {
+        padding-bottom: 0.5rem;
+    }
+
+    .aboutcard {
+        width: 290px;
+        height: 210px;
+    }
+}

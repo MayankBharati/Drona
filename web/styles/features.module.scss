@@ -1,0 +1,107 @@
+.features {
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.leftfeatures {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightfeatures {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featuresheading {
+    font-family: poppins;
+    font-size: 60px;
+    padding-bottom: 3rem;
+    align-items: flex-start;
+}
+
+.featurescard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    margin-left: 10rem;
+}
+
+.cardtext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2rem;
+}
+
+.cardheading {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.cardsubheading {
+    font-size: 18px;
+    font-family: poppins;
+    font-weight: normal;
+    text-align: left;
+    // padding-bottom: 1rem;
+}
+
+@media (max-width: 1330px) {
+    .featuresheading {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    .featurescard {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 1050px) {
+    .featuresheading {
+        font-size: 50px;
+    }
+    .featurescard {
+        margin-left: 2.5rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .leftfeatures {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rightfeatures {
+        width: 100%;
+    }
+
+    .featuresheading {
+        font-size: 45px;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    .featurescard {
+        margin-left: 0rem;
+    }
+}
